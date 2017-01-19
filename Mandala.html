@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		.iris {
+			  animation: colorchange linear 10s; 
+			  -webkit-animation: colorchange linear 10s;  
+			  transition:transform .4s ease-out;
+
+		}
+		.iris:hover {
+			 transform: rotate(45deg) scale(1.03);
+		}
+
+		.pupil{
+			animation: spin linear 20;
+			transition:transform .6s ease-out;
+		}
+
+		.pupil:hover {
+			transform: rotate(45deg) scale(1.3);
+		}
+
+		.whiteOfEye {
+			animation: spin linear 20s;
+			transition:transform .6s ease-out;
+		}
+
+		.lines {
+			animation: spin linear 10s; 
+			/* -webkit-animation: spin 4s;  */
+		}
+
+		.lines_two {
+			animation: spin_two linear 5s; 
+			/* -webkit-animation: spin 4s;  */
+			opacity: .3
+		}
+
+		.tick {
+			animation: spin_two linear .4s; 
+		}
+
+		.tick_two {
+			/* animation: spin_two linear 10s;  */
+		}
+
+		.skin {
+			animation: colorchangeSkin 15s; 
+			transition:transform 2s ease-out;
+			stroke: #444;
+			stroke-width: 4;
+
+		}
+
+		.skin:hover {
+			 transform: rotate(45deg) scale(1.05);
+		}
+
+		.iris, 
+		.pupil, 
+		.whiteOfEye, 
+		.lines, 
+		.lines_two, 
+		.tick, 
+		.tick_two, 
+		.skin{
+			transform-origin: 50% 50%; animation-iteration-count: infinite;
+	 	}
+
+		
+		@-moz-keyframes spin { 50% { -moz-transform:rotate(360deg); transform:rotate(360deg)  scale(1.4) ;}}
+		@-webkit-keyframes spin { 50% { -webkit-transform:rotate(360deg); transform:rotate(360deg) scale(1.4);}}
+		@keyframes spin { 50% { -webkit-transform: rotate(360deg); transform:rotate(360deg) scale(1.4);}}
+
+		@-moz-keyframes spin_two { 100% { -moz-transform: rotate(360deg); transform:rotate(360deg) scale(.5);}}
+		@-webkit-keyframes spin_two { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg) scale(.5); }}
+		@keyframes spin_two { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg) scale(.5);}}
+
+		@keyframes colorchange {
+		  0%   {fill: rgba(249, 229, 159, 1);}
+		  10% {fill: rgba(255, 54, 54, 0.7);} /* //deep pink/red */
+		  20% {fill: rgba(237, 92, 20, 0.7);} /* //burnt orange */
+		  30%  {fill: rgba(239, 207, 17, 0.7);}/* //YULLOW */
+		  40%  {fill: rgba(15, 243, 225, 0.7);}/* //BLEEEU */
+		  50%  {fill: rgba(12, 156, 244, 0.7);}/* //Deeper bleeu */
+		  60%  {fill: rgba(137, 64, 221, 0.7);}/* // purple */
+		  70%  {fill: rgba(224, 63, 136, 0.7);}/* // pink */
+		  90%  {fill: rgba(118, 225, 196, 0.7);}/* // skin */
+		  100% {fill: rgba(249, 229, 159, .7);
+		  }
+		}
+
+		@keyframes colorchangeSkin {
+		  0%   {fill: rgba(239, 43, 71, 1);}
+		  40%  {fill: rgba(75, 34, 244, 0.65);}
+		  70%  {fill: rgba(28, 175, 91, 0.65);}
+		  100% {fill: rgba(239, 43, 71, 1);}
+		  
+		}
+
+		@-webkit-keyframes colorchangeSkin {
+		  0%   {fill: rgba(239, 43, 71, 1);}
+		  40%  {fill: rgba(75, 34, 244, 0.65);}
+		  70%  {fill: rgba(224, 63, 136, 1);}
+		  100% {fill: rgba(239, 43, 71, 1);}
+		 } 
+
+		@-webkit-keyframes colorchange 
+		{
+		  0%  {fill: rgba(249, 229, 159, 1);}
+		  10% {fill: rgba(255, 54, 54, 0.7);} 
+		  20% {fill: rgba(237, 92, 20, 0.7);} 
+		  30% {fill: rgba(239, 207, 17, 0.7);}
+		  40% {fill: rgba(15, 243, 225, 0.7);}
+		  50% {fill: rgba(12, 156, 244, 0.7);}
+		  60% {fill: rgba(137, 64, 221, 0.7);}
+		  70% {fill: rgba(224, 63, 136, 0.7);}
+		  90% {fill: rgba(118, 225, 196, 0.7);}
+		  100% {fill: rgba(249, 229, 159, 0.7);
+		  }
+		}
+	</style>
+</head>
+<body>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="600px" viewBox="95 -5 110 110" style="enable-background:new 95 -5 110 110;" xml:space="preserve">
+<circle class="skin"  style="fill:#44CC82;" cx="150" cy="50" r="50"/>
+<g class="lines_two">
+	
+	
+		<rect class="tick_two" x="178.807" y="44.427" transform="matrix(-0.1307 -0.9914 0.9914 -0.1307 156.9534 229.8977)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick_two" x="177.364" y="38.427" transform="matrix(-0.3331 -0.9429 0.9429 -0.3331 199.2092 221.1772)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick_two" x="174.706" y="32.856" transform="matrix(-0.5228 -0.8524 0.8524 -0.5228 237.283 201.9575)" style="fill:#fcf7d0;" width="0.917" height="3.424"/>
+	
+		<rect class="tick_two" x="170.948" y="27.962" transform="matrix(-0.6888 -0.725 0.725 -0.6888 267.9551 174.3777)" style="fill:#fcf7d0;" width="0.917" height="3.424"/>
+	
+		<rect class="tick_two" x="166.25" y="23.954" transform="matrix(-0.8237 -0.567 0.567 -0.8237 289.4748 141.336)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick_two" x="160.824" y="21.014" transform="matrix(-0.9244 -0.3814 0.3814 -0.9244 301.7033 105.2544)" style="fill:#fcf7d0;" width="0.919" height="3.425"/>
+	
+		<rect class="tick_two" x="154.907" y="19.262" transform="matrix(-0.9834 -0.1815 0.1815 -0.9834 304.3462 69.7918)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick_two" x="148.75" y="18.789" transform="matrix(-0.9996 0.0271 -0.0271 -0.9996 298.9193 36.9451)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick_two" x="141.382" y="20.839" transform="matrix(-0.2337 -0.9723 0.9723 -0.2337 155.8252 165.4052)" style="fill:#fcf7d0;" width="3.422" height="0.917"/>
+	
+		<rect class="tick_two" x="135.566" y="22.903" transform="matrix(-0.4309 -0.9024 0.9024 -0.4309 175.3533 157.3067)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick_two" x="130.301" y="26.13" transform="matrix(-0.6093 -0.7929 0.7929 -0.6093 191.3644 147.4699)" style="fill:#fcf7d0;" width="3.424" height="0.919"/>
+	
+		<rect class="tick_two" x="125.833" y="30.38" transform="matrix(-0.7606 -0.6492 0.6492 -0.7606 204.537 137.0972)" style="fill:#fcf7d0;" width="3.423" height="0.917"/>
+	
+		<rect class="tick_two" x="122.339" y="35.468" transform="matrix(-0.8789 -0.4769 0.4769 -0.8789 215.9505 126.6665)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick_two" x="119.976" y="41.175" transform="matrix(-0.959 -0.2833 0.2833 -0.959 226.5912 116.0403)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+	
+		<rect class="tick_two" x="118.853" y="47.238" transform="matrix(-0.997 -0.078 0.078 -0.997 237.0413 104.6552)" style="fill:#fcf7d0;" width="3.424" height="0.918"/>
+	
+		<rect class="tick_two" x="120.271" y="52.16" transform="matrix(-0.1307 -0.9914 0.9914 -0.1307 83.1 180.6078)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick_two" x="121.718" y="58.156" transform="matrix(-0.3345 -0.9424 0.9424 -0.3345 106.6293 195.0323)" style="fill:#fcf7d0;" width="0.918" height="3.423"/>
+	
+		<rect class="tick_two" x="124.377" y="63.728" transform="matrix(-0.5225 -0.8526 0.8526 -0.5225 134.2717 206.0719)" style="fill:#fcf7d0;" width="0.919" height="3.423"/>
+	
+		<rect class="tick_two" x="128.137" y="68.621" transform="matrix(-0.6888 -0.725 0.725 -0.6888 166.1799 212.0032)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick_two" x="132.836" y="72.626" transform="matrix(-0.8243 -0.5662 0.5662 -0.8243 201.077 211.082)" style="fill:#fcf7d0;" width="0.918" height="3.422"/>
+	
+		<rect class="tick_two" x="138.258" y="75.568" transform="matrix(-0.9235 -0.3836 0.3836 -0.9235 237.1739 201.8633)" style="fill:#fcf7d0;" width="0.919" height="3.423"/>
+	
+		<rect class="tick_two" x="144.172" y="77.323" transform="matrix(-0.9833 -0.1821 0.1821 -0.9833 272.4539 183.0822)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick_two" x="150.323" y="77.802" transform="matrix(-0.9996 0.0266 -0.0266 -0.9996 303.6259 154.9831)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick_two" x="155.198" y="78.246" transform="matrix(-0.2345 -0.9721 0.9721 -0.2345 117.2006 249.6969)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick_two" x="161.01" y="76.189" transform="matrix(-0.4312 -0.9023 0.9023 -0.4312 163.7226 256.5155)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+	
+		<rect class="tick_two" x="166.273" y="72.959" transform="matrix(-0.6095 -0.7928 0.7928 -0.6095 212.1759 251.3401)" style="fill:#fcf7d0;" width="3.422" height="0.919"/>
+	
+		<rect class="tick_two" x="170.743" y="68.705" transform="matrix(-0.7613 -0.6484 0.6484 -0.7613 258.9056 233.6358)" style="fill:#fcf7d0;" width="3.424" height="0.919"/>
+	
+		<rect class="tick_two" x="174.239" y="63.619" transform="matrix(-0.8792 -0.4765 0.4765 -0.8792 300.1017 204.2593)" style="fill:#fcf7d0;" width="3.422" height="0.919"/>
+	
+		<rect class="tick_two" x="176.592" y="57.915" transform="matrix(-0.959 -0.2833 0.2833 -0.959 332.7599 164.8754)" style="fill:#fcf7d0;" width="3.422" height="0.916"/>
+	
+		<rect class="tick_two" x="177.721" y="51.845" transform="matrix(-0.997 -0.0776 0.0776 -0.997 354.2645 118.3769)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+</g>
+<path class="whiteOfEye"  style="fill:#fcf3b1;" d="M150,36.638c-10.655,0-20.07,5.281-25.792,13.362c5.721,8.082,15.136,13.363,25.792,13.363
+	c10.654,0,20.07-5.281,25.791-13.363C170.07,41.919,160.654,36.638,150,36.638z"/>
+<circle class="iris" style="fill:#E03F88;" cx="150" cy="50" r="13.362"/>
+<circle class="pupil" style="fill:#333;" cx="150" cy="50" r="6.317"/>
+<g class="lines">
+	<path style="fill:#fcf7d0;" d="M154.256,48.123c-1.729,0.229-3.315-0.988-3.544-2.717c-0.229-1.731,0.987-3.316,2.717-3.545
+		c1.73-0.229,3.316,0.986,3.545,2.718C157.202,46.307,155.986,47.894,154.256,48.123z"/>
+	
+		<rect class="tick" x="178.807" y="44.427" transform="matrix(-0.1307 -0.9914 0.9914 -0.1307 156.9534 229.8977)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick" x="177.364" y="38.427" transform="matrix(-0.3331 -0.9429 0.9429 -0.3331 199.2092 221.1772)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick" x="174.706" y="32.856" transform="matrix(-0.5228 -0.8524 0.8524 -0.5228 237.283 201.9575)" style="fill:#fcf7d0;" width="0.917" height="3.424"/>
+	
+		<rect class="tick" x="170.948" y="27.962" transform="matrix(-0.6888 -0.725 0.725 -0.6888 267.9551 174.3777)" style="fill:#fcf7d0;" width="0.917" height="3.424"/>
+	
+		<rect class="tick" x="166.25" y="23.954" transform="matrix(-0.8237 -0.567 0.567 -0.8237 289.4748 141.336)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick" x="160.824" y="21.014" transform="matrix(-0.9244 -0.3814 0.3814 -0.9244 301.7033 105.2544)" style="fill:#fcf7d0;" width="0.919" height="3.425"/>
+	
+		<rect class="tick" x="154.907" y="19.262" transform="matrix(-0.9834 -0.1815 0.1815 -0.9834 304.3462 69.7918)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick" x="148.75" y="18.789" transform="matrix(-0.9996 0.0271 -0.0271 -0.9996 298.9193 36.9451)" style="fill:#fcf7d0;" width="0.918" height="3.424"/>
+	
+		<rect class="tick" x="141.382" y="20.839" transform="matrix(-0.2337 -0.9723 0.9723 -0.2337 155.8252 165.4052)" style="fill:#fcf7d0;" width="3.422" height="0.917"/>
+	
+		<rect class="tick" x="135.566" y="22.903" transform="matrix(-0.4309 -0.9024 0.9024 -0.4309 175.3533 157.3067)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick" x="130.301" y="26.13" transform="matrix(-0.6093 -0.7929 0.7929 -0.6093 191.3644 147.4699)" style="fill:#fcf7d0;" width="3.424" height="0.919"/>
+	
+		<rect class="tick" x="125.833" y="30.38" transform="matrix(-0.7606 -0.6492 0.6492 -0.7606 204.537 137.0972)" style="fill:#fcf7d0;" width="3.423" height="0.917"/>
+	
+		<rect class="tick" x="122.339" y="35.468" transform="matrix(-0.8789 -0.4769 0.4769 -0.8789 215.9505 126.6665)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick" x="119.976" y="41.175" transform="matrix(-0.959 -0.2833 0.2833 -0.959 226.5912 116.0403)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+	
+		<rect class="tick" x="118.853" y="47.238" transform="matrix(-0.997 -0.078 0.078 -0.997 237.0413 104.6552)" style="fill:#fcf7d0;" width="3.424" height="0.918"/>
+	
+		<rect class="tick" x="120.271" y="52.16" transform="matrix(-0.1307 -0.9914 0.9914 -0.1307 83.1 180.6078)" style="fill:#fcf7d0;" width="0.919" height="3.424"/>
+	
+		<rect class="tick" x="121.718" y="58.156" transform="matrix(-0.3345 -0.9424 0.9424 -0.3345 106.6293 195.0323)" style="fill:#fcf7d0;" width="0.918" height="3.423"/>
+	
+		<rect class="tick" x="124.377" y="63.728" transform="matrix(-0.5225 -0.8526 0.8526 -0.5225 134.2717 206.0719)" style="fill:#fcf7d0;" width="0.919" height="3.423"/>
+	
+		<rect class="tick" x="128.137" y="68.621" transform="matrix(-0.6888 -0.725 0.725 -0.6888 166.1799 212.0032)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick" x="132.836" y="72.626" transform="matrix(-0.8243 -0.5662 0.5662 -0.8243 201.077 211.082)" style="fill:#fcf7d0;" width="0.918" height="3.422"/>
+	
+		<rect class="tick" x="138.258" y="75.568" transform="matrix(-0.9235 -0.3836 0.3836 -0.9235 237.1739 201.8633)" style="fill:#fcf7d0;" width="0.919" height="3.423"/>
+	
+		<rect class="tick" x="144.172" y="77.323" transform="matrix(-0.9833 -0.1821 0.1821 -0.9833 272.4539 183.0822)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick" x="150.323" y="77.802" transform="matrix(-0.9996 0.0266 -0.0266 -0.9996 303.6259 154.9831)" style="fill:#fcf7d0;" width="0.917" height="3.423"/>
+	
+		<rect class="tick" x="155.198" y="78.246" transform="matrix(-0.2345 -0.9721 0.9721 -0.2345 117.2006 249.6969)" style="fill:#fcf7d0;" width="3.423" height="0.918"/>
+	
+		<rect class="tick" x="161.01" y="76.189" transform="matrix(-0.4312 -0.9023 0.9023 -0.4312 163.7226 256.5155)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+	
+		<rect class="tick" x="166.273" y="72.959" transform="matrix(-0.6095 -0.7928 0.7928 -0.6095 212.1759 251.3401)" style="fill:#fcf7d0;" width="3.422" height="0.919"/>
+	
+		<rect class="tick" x="170.743" y="68.705" transform="matrix(-0.7613 -0.6484 0.6484 -0.7613 258.9056 233.6358)" style="fill:#fcf7d0;" width="3.424" height="0.919"/>
+	
+		<rect class="tick" x="174.239" y="63.619" transform="matrix(-0.8792 -0.4765 0.4765 -0.8792 300.1017 204.2593)" style="fill:#fcf7d0;" width="3.422" height="0.919"/>
+	
+		<rect class="tick" x="176.592" y="57.915" transform="matrix(-0.959 -0.2833 0.2833 -0.959 332.7599 164.8754)" style="fill:#fcf7d0;" width="3.422" height="0.916"/>
+	
+		<rect class="tick" x="177.721" y="51.845" transform="matrix(-0.997 -0.0776 0.0776 -0.997 354.2645 118.3769)" style="fill:#fcf7d0;" width="3.422" height="0.918"/>
+</g>
+
+</svg>
+</body>
+</html>

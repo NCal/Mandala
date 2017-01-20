@@ -8,7 +8,9 @@
 	<style>
 		.iris {
 			  animation: colorchange linear 10s; 
+			  -moz-animation: colorchange linear 10s;  
 			  -webkit-animation: colorchange linear 10s;  
+			  transform: transform .4s ease-out;
 			  transition:transform .4s ease-out;
 
 		}
@@ -38,11 +40,11 @@
 		.lines_two {
 			animation: spin_two linear 5s; 
 			/* -webkit-animation: spin 4s;  */
-			opacity: .3
+			/* opacity: .5 */
 		}
 
 		.tick {
-			animation: spin_two linear .4s; 
+			animation: spin_two linear 20s; 
 		}
 
 		.tick_two {
@@ -69,7 +71,9 @@
 		.tick, 
 		.tick_two, 
 		.skin{
-			transform-origin: 50% 50%; animation-iteration-count: infinite;
+			/* -moz-transform-origin: 25px 25px; */
+			transform-origin: 150px 50px; animation-iteration-count: infinite;
+			/* transform-origin: 50% 50%; animation-iteration-count: infinite; */
 	 	}
 
 		
@@ -110,7 +114,7 @@
 		  100% {fill: rgba(239, 43, 71, 1);}
 		 } 
 
-		@-webkit-keyframes colorchange 
+		@-webkit-keyframes colorchange
 		{
 		  0%  {fill: rgba(249, 229, 159, 1);}
 		  10% {fill: rgba(255, 54, 54, 0.7);} 
@@ -124,6 +128,20 @@
 		  100% {fill: rgba(249, 229, 159, 0.7);
 		  }
 		}
+
+ 		@-moz-keyframes colorchange {
+  			0%  {fill: rgba(249, 229, 159, 1);}
+  			10% {fill: rgba(255, 54, 54, 0.7);} 
+  			20% {fill: rgba(237, 92, 20, 0.7);} 
+  			30% {fill: rgba(239, 207, 17, 0.7);}
+  			40% {fill: rgba(15, 243, 225, 0.7);}
+  			50% {fill: rgba(12, 156, 244, 0.7);}
+  			60% {fill: rgba(137, 64, 221, 0.7);}
+  			70% {fill: rgba(224, 63, 136, 0.7);}
+  			90% {fill: rgba(118, 225, 196, 0.7);}
+  			100% {fill: rgba(249, 229, 159, 0.7);
+  			}
+  		}
 	</style>
 </head>
 <body>
